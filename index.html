@@ -52,19 +52,19 @@
         <h2>Projects</h2>
         <details class="project">
           <summary class="project-title">
-            <h3>Fotomatic Website</h3>
+            <h3>Fotomatic website</h3>
           </summary>
       
           <p class="project-description">
-            Reformatting a template <a href="https://innoc3ntt.github.io/fotomatic/">website</a> with CSS flex-box. 
+            Reformatting a template website with CSS flex-box. See it <a href="https://innoc3ntt.github.io/fotomatic/">here</a>.
           </p>
         </details>
         <details class="project">
           <summary class="project-title">
-            <h3>Outdoor Rec mockup <a href="https://innoc3ntt.github.io/flexbox-business-site-starting/" target="_blank">website</a></h3>
+            <h3>Outdoor Rec mockup website</h3>
           </summary>
           <p class="project-description">
-            A mockup website for an outdoor guiding company built from scratch.
+            A mockup website for an outdoor guiding company built from scratch. See it <a href="https://innoc3ntt.github.io/flexbox-business-site-starting/" target="_blank">here.</a>
           </p>
         </details>
         <!--<details class="project">
@@ -131,9 +131,11 @@
 
     function toggleNightMode() {
       var element = document.body;
-      var links = document.links;
+      var anchors = document.querySelectorAll("a")
       element.classList.toggle("dark-mode");
-      links.classList.toggle("dark-mode");
+      for (let i = 0 ; i < anchors.length; i++) {
+        anchors[i].classList.toggle("dark-mode");
+      }
     }
 
   </script>
