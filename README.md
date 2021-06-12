@@ -10,4 +10,4 @@ This is the source code for my portfolio website. I built this to showcase what 
 
 ## Demo
 
-You can visit the website by going [here](https://github.com/innoc3nt/personal-portfolio-website).
+You can visit the website by going [here](https://innoc3ntt.github.io/personal-portfolio-website/).
