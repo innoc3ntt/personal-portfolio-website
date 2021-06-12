@@ -41,6 +41,16 @@ body {
   flex-direction: column;
 }
 
+.dark-mode {
+  background-color: gray;
+  color: rgba(255, 255, 255, 0.822);
+}
+
+p .dark-mode {
+  font-weight: 10000;
+  
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -121,7 +131,7 @@ a {
 
 #skills-container {
   display: flex;
-  width: 100%;
+  width: 40%;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -129,7 +139,7 @@ a {
 #skills-container > * {
   font-size: 2em;
   width: 2em;
-  margin-top: var(--spacing-1);
+  margin: var(--spacing-1);
 }
 
 @media only screen and (max-width: 600px) {

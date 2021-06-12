@@ -11,6 +11,9 @@
     <nav>
       <h2 id="logo">Timothy Tan</h2>
       <ul class="navigation-items">
+        <li class="navigation-item">
+          <i class="fas fa-moon" id="night"></i>
+        </li>
         <li class="navigation-item"><a href="#about-me">About Me</a></li>
         <li class="navigation-item"><a href="#projects">Projects</a></li>
         <li class="navigation-item"><a href="#skills">Skills</a></li>
@@ -121,5 +124,17 @@
 
       timeContainer.innerText = intlNumberFormatter.format(difference);
     }, 1000);
+
+    const nightIcon = document.getElementById("night");
+
+    nightIcon.addEventListener("click",toggleNightMode)
+
+    function toggleNightMode() {
+      var element = document.body;
+      var links = document.links;
+      element.classList.toggle("dark-mode");
+      links.classList.toggle("dark-mode");
+    }
+
   </script>
 </html>
