@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav>
-      <h2 id="logo">Ada Lovelace</h2>
+      <h2 id="logo">Timothy Tan</h2>
       <ul class="navigation-items">
         <li class="navigation-item"><a href="#about-me">About Me</a></li>
         <li class="navigation-item"><a href="#projects">Projects</a></li>
@@ -24,20 +24,13 @@
           <div class="about-me-text-container">
             <h2>About Me</h2>
             <p>
-              Hi! I'm Ada, Countess of Lovelace and am an English mathematician
-              and writer, chiefly known for my work on Charles Babbage's
-              proposed mechanical general-purpose computer, the Analytical
-              Engine.
+              Hi! I'm Tim, I have a degree in process engineering and am transitioning to become a software engineer. I have been programming since 2020
             </p>
             <p>
-              I am one of the first to recognize that machines have applications
-              beyond pure calculation, and to have published the first algorithm
-              intended to be carried out by such a machine.
+              I have interests in IOT, AI. 
             </p>
             <p>
-              In my free time I like to read about scientific developments,
-              mathematics, and computational mathematics. I also like to take my
-              chances of winning big.
+              In my free time I like to rock climb and have spend time with my dog.
             </p>
             <p>
               Fun fact! I've been programing for
@@ -45,8 +38,8 @@
             </p>
           </div>
           <img
-            src="https://www.biography.com/.image/t_share/MTE4MDAzNDEwODQwOTQ2MTkw/ada-lovelace-20825279-1-402.jpg"
-            alt="A photo of Ada Lovelace"
+            src="./resources/images/IMG_0566.jpg"
+            alt="Self-portrait"
             class="portrait"
           />
         </div>
@@ -56,33 +49,22 @@
         <h2>Projects</h2>
         <details class="project">
           <summary class="project-title">
-            <h3>The first computer program</h3>
+            <h3>Fotomatic Website</h3>
           </summary>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Diagram_for_the_computation_of_Bernoulli_numbers.jpg/220px-Diagram_for_the_computation_of_Bernoulli_numbers.jpg"
-            alt="Lovelace's diagram from note G, the first published computer
-          algorithm"
-            class="project-image"
-          />
+      
           <p class="project-description">
-            The world's first computer program for computing Bernoulli numbers.
+            Reformatting a template website with CSS flex-box.
           </p>
         </details>
         <details class="project">
           <summary class="project-title">
-            <h3>The Analytical Engine</h3>
+            <a href="https://innoc3ntt.github.io/flexbox-business-site-starting/"></a><h3>Outdoor Rec Mockup Website</h3></a>
           </summary>
-          <img
-            src="https://images2.minutemediacdn.com/image/upload/c_fit,f_auto,fl_lossy,q_auto,w_728/v1555925585/shape/mentalfloss/analyticalmachine_babbage_london.jpg?itok=5vRTwQjb"
-            alt="An original model of part of the Analytical Engine"
-            class="project-image"
-          />
           <p class="project-description">
-            I helped Charles Babbage on topics ranging from math to computation
-            that helped the development of the Analytical Engine.
+            A mockup website for an outdoor guiding company.
           </p>
         </details>
-        <details class="project">
+        <!--<details class="project">
           <summary class="project-title">
             <h3>The Ada programming language</h3>
           </summary>
@@ -96,7 +78,7 @@
             My work inspired the United States Department of Defense to name
             their new programming language after me.
           </p>
-        </details>
+        </details> -->
       </section>
 
       <section id="skills">
@@ -120,18 +102,18 @@
       </section>
     </main>
 
-    <footer>Made with <span class="heart">♥</span> in London</footer>
+    <footer>Made with <span class="heart">♥</span> in Australia</footer>
   </body>
   <script>
     const timeContainer = document.getElementById("time-container");
-    const BIRTH_DAY = "12-10-1815";
-    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const TIME_START = "02-12-2021";
+    const TIME_START_DATE = new Date(TIME_START);
     const intlNumberFormatter = new Intl.NumberFormat("en-US");
 
     setInterval(() => {
       const now = new Date();
       const difference = Math.floor(
-        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+        (now.getTime() - TIME_START_DATE.getTime()) / 1000
       );
 
       timeContainer.innerText = intlNumberFormatter.format(difference);
