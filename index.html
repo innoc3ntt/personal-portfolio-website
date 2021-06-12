@@ -11,9 +11,7 @@
     <nav>
       <h2 id="logo">Timothy Tan</h2>
       <ul class="navigation-items">
-        <li class="navigation-item">
-          <i class="fas fa-moon" id="night"></i>
-        </li>
+        <li class="navigation-item"><i class="fas fa-moon" id="night"></i></li>
         <li class="navigation-item"><a href="#about-me">About Me</a></li>
         <li class="navigation-item"><a href="#projects">Projects</a></li>
         <li class="navigation-item"><a href="#skills">Skills</a></li>
@@ -133,8 +131,8 @@
       var element = document.body;
       var anchors = document.querySelectorAll("a")
       element.classList.toggle("dark-mode");
-      for (let i = 0 ; i < anchors.length; i++) {
-        anchors[i].classList.toggle("dark-mode");
+      for (const e of anchors) {
+        e.classList.toggle("dark-mode");
       }
     }
 

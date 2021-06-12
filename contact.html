@@ -10,7 +10,7 @@
   </head>
   <body>
     <nav>
-      <h2 id="logo"><a href="/">Timothy Tan</a></h2>
+      <h2 id="logo"><a href="./index.html">Timothy Tan</a></h2>
       <ul class="navigation-items">
         <li class="navigation-item"><i class="fas fa-moon" id="night"></i></li>
         <li class="navigation-item"><a href="index.html">About Me</a></li>
@@ -23,7 +23,7 @@
       <section id="contact">
         <h2>Contact</h2>
         <p>Have an interesting project? I would love to hear about it!</p>
-        <div>
+        <div id="socials">
           <a href="https://www.linkedin.com/in/timothy-tan-4773b172/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
           <a href="https://github.com/innoc3ntt" target="_blank"><i class="fab fa-github icon"></i></a>
           <a href="mailto:timothy.tan.93@gmail.com?subject= Hello There" target="_blank"><i class="fas fa-envelope-square icon"></i></a>
@@ -32,16 +32,23 @@
     </main>
   </body>
   <script>
-        const nightIcon = document.getElementById("night");
+    const nightIcon = document.getElementById("night");
 
     nightIcon.addEventListener("click",toggleNightMode)
 
     function toggleNightMode() {
-      var element = document.body;
-      var anchors = document.querySelectorAll("a")
-      element.classList.toggle("dark-mode");
-      for (let i = 0 ; i < anchors.length; i++) {
-        anchors[i].classList.toggle("dark-mode");
+      var body = document.body;
+      var socials = document.querySelectorAll("i");
+      var anchors = document.querySelectorAll("a");
+
+      body.classList.toggle("dark-mode");
+      
+      for (const e of socials) {
+        e.classList.toggle("dark-mode");
+      }
+
+      for (const e of anchors) {
+        e.classList.toggle("dark-mode");
       }
     }
   </script>
