@@ -12,6 +12,7 @@
     <nav>
       <h2 id="logo"><a href="/">Timothy Tan</a></h2>
       <ul class="navigation-items">
+        <li class="navigation-item"><i class="fas fa-moon" id="night"></i></li>
         <li class="navigation-item"><a href="index.html">About Me</a></li>
         <li class="navigation-item"><a href="index.html">Projects</a></li>
         <li class="navigation-item"><a href="index.html">Skills</a></li>
@@ -30,4 +31,18 @@
       </section>
     </main>
   </body>
+  <script>
+        const nightIcon = document.getElementById("night");
+
+    nightIcon.addEventListener("click",toggleNightMode)
+
+    function toggleNightMode() {
+      var element = document.body;
+      var anchors = document.querySelectorAll("a")
+      element.classList.toggle("dark-mode");
+      for (let i = 0 ; i < anchors.length; i++) {
+        anchors[i].classList.toggle("dark-mode");
+      }
+    }
+  </script>
 </html>
