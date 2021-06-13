@@ -68,7 +68,14 @@ nav {
 
 .navigation-item {
   margin: var(--spacing-1);
+  transition: 300ms;
+
 }
+.navigation-item:hover { 
+  text-decoration: underline 0.15em rgba(255, 255, 255, 1);
+  transition: 300ms;
+}
+
 
 .portrait {
   width: 300px;
@@ -139,7 +146,7 @@ a {
 #skills-container > * {
   font-size: 2em;
   width: 2em;
-  margin: var(--spacing-1);
+  margin: var(--spacing-3);
 }
 
 @media only screen and (max-width: 600px) {
