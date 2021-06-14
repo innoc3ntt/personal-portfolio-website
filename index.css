@@ -48,7 +48,6 @@ body {
 
 p .dark-mode {
   font-weight: 10000;
-  
 }
 
 nav {
@@ -69,13 +68,11 @@ nav {
 .navigation-item {
   margin: var(--spacing-1);
   transition: 300ms;
-
 }
-.navigation-item:hover { 
+.navigation-item:hover {
   text-decoration: underline 0.15em rgba(255, 255, 255, 1);
   transition: 300ms;
 }
-
 
 .portrait {
   width: 300px;

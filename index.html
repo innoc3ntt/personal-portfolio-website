@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./index.css" />
-    <script src="https://kit.fontawesome.com/2bd2ef88d5.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/2bd2ef88d5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav>
@@ -25,13 +28,14 @@
           <div class="about-me-text-container">
             <h2>About Me</h2>
             <p>
-              Hi! I'm Tim, I have a degree in process engineering and am transitioning to become a software engineer. I have been programming since 2020
+              Hi! I'm Tim, I have a degree in process engineering and am
+              transitioning to become a software engineer. I have been
+              programming since 2020
             </p>
+            <p>I have interests in IOT, automation and AI.</p>
             <p>
-              I have interests in IOT, automation and AI.
-            </p>
-            <p>
-              In my free time I like to rock climb and have spend time with my dog.
+              In my free time I like to rock climb and have spend time with my
+              dog.
             </p>
             <p>
               Fun fact! I've been programing for
@@ -52,9 +56,10 @@
           <summary class="project-title">
             <h3>Fotomatic website</h3>
           </summary>
-      
+
           <p class="project-description">
-            Reformatting a template website with CSS flex-box. See it <a href="https://innoc3ntt.github.io/fotomatic/">here</a>.
+            Reformatting a template website with CSS flex-box. See it
+            <a href="https://innoc3ntt.github.io/fotomatic/">here</a>.
           </p>
         </details>
         <details class="project">
@@ -62,7 +67,13 @@
             <h3>Outdoor Rec mockup website</h3>
           </summary>
           <p class="project-description">
-            A mockup website for an outdoor guiding company built from scratch. See it <a href="https://innoc3ntt.github.io/flexbox-business-site-starting/" target="_blank">here.</a>
+            A mockup website for an outdoor guiding company built from scratch.
+            See it
+            <a
+              href="https://innoc3ntt.github.io/flexbox-business-site-starting/"
+              target="_blank"
+              >here.</a
+            >
           </p>
         </details>
         <!--<details class="project">
@@ -94,15 +105,14 @@
           <i class="fab fa-github"></i>
           <i class="fas fa-terminal"></i>
 
-        <!--
+          <!--
           <i class="fab fa-react"></i>
           <i class="fab fa-aws"></i>
           <i class="fab fa-sketch"></i>
           <i class="fab fa-figma"></i>
           <i class="fab fa-chrome"></i>
           <i class="fas fa-universal-access"></i>
-        -->
-        </div>
+        --></div>
       </section>
     </main>
 
@@ -125,16 +135,15 @@
 
     const nightIcon = document.getElementById("night");
 
-    nightIcon.addEventListener("click",toggleNightMode)
+    nightIcon.addEventListener("click", toggleNightMode);
 
     function toggleNightMode() {
       var element = document.body;
-      var anchors = document.querySelectorAll("a")
+      var anchors = document.querySelectorAll("a");
       element.classList.toggle("dark-mode");
       for (const e of anchors) {
         e.classList.toggle("dark-mode");
       }
     }
-
   </script>
 </html>
